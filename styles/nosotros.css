@@ -27,6 +27,20 @@
     color: white !important;
     
  }
+ .nav-link-1.active{
+    background: #525252 !important;
+    color: white !important;
+}
+
+.nav-link-1{
+    background: white;
+    margin-bottom: .2rem;
+    border-radius: 0 !important;
+    color: #383838;
+}
+.nav-link-1:hover {
+    color: black !important;
+}
  li {
     padding: 0px 1em;
  }

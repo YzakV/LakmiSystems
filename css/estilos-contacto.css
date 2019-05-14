@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700');
+
+.contenedor-logo-navbar {
+    width: 100%;
+    height: 9vh;
+    background: white;
+    border-bottom: .5px solid #BEBEBE;
+ }
+ .logo-principal {
+    height: 9vh;
+    margin-left: 16px;
+ }
+
+ .nav-item {
+    height: 9vh;
+    line-height: 7vh;
+    padding: 0;
+ }
+ .nav-link {
+     display: block;
+     padding: 0 1em !important;
+     width: 100%;
+     line-height: 9vh;
+ }
+ .nav-item:hover {
+    background: #2E2E2E;
+ }
+ .nav-link:hover {
+    color: white !important;
+    
+ }
+ li {
+    padding: 0px 1em;
+ }
+ .menu-desplegable {
+     /* position: absolute; */
+     position: fixed;
+     display: none;
+     top: 9vh;
+     /* left: 560px; */
+     width: 100%;
+     height: 100vh;
+     background: #2E2E2E;
+     color: white;
+     font-size: 30px;
+     font-weight: 600;
+     z-index: 12;
+     text-align: center;
+ }
+ .ul-desplegable {
+     list-style: none;
+     padding: 20px 20px;
+     /* margin:auto; */
+ }
+ .ul-desplegable > li{
+    margin-bottom: 2em;
+    border-bottom: 1px solid #BEBEBE;
+ }
+ .boton-menu {
+    display: block;
+    color: black;
+    border: .5px solid #848484;
+    padding: 10px;
+    border-radius: 8px;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    background: black;
+ }
+ .contenedor-footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+ }
+ .contenedor-footer h4 {
+     font-size: 20px;
+ }
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.mi-h1-bonito {
+    font-size: 20px;
+    margin-left: 11px;
+}
+
+
+.card-edited-2 {
+    height: 460px;
+    width: 410px;
+    border-radius: 15px;
+    padding: 20px 5px;
+    margin-top: 38px;
+}
+
+.card-edited-2 > a {
+    font-size: 14px;
+}
+
+.card-edited-2> h1 {
+
+    font-size: 14px;
+}
+
+.contenedor-main-1 {
+    margin-top: 20em;
+    position: relative;
+    font-size: 10px;
+}
+.link-servicios {
+    margin-top: 37px;
+}
+
+
+
+@media screen and (max-width: 1300px){
+    .contenedor-main-1 {
+        margin-top: 10em;
+     
+    }
+    .contenedor-copy-3 {
+        margin-top: 10em;
+    }   
+
+    .contenedor-copy-1 {
+        margin-top: 7em;
+        margin-bottom: 0em;
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .contenedor-main-1 {
+        margin-top: 10em;
+     
+    }
+    .contenedor-copy-3 {
+        margin-top: 10em;
+    }  
+
+.contenedor-copy-3 >h2 {
+        
+        margin-left: 70px;
+    }  
+
+
+    .contenedor-copy-1 {
+        margin-top: 7em;
+        margin-bottom: 0em;
+}
+}
+@media screen and (max-width: 1098px){
+    .contenedor-copy-1 {
+        margin-top: 7em;
+        margin-bottom: 0em;
+        margin-left: 0px;
+}
+    .contenedor-main-1 {
+        margin-top: 2em;
+     
+    } 
+
+    
+}
+@media screen and (max-width: 1025px){
+    .link-servicios {
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+    .link-servicios > a {
+        color: #2E9AFE;
+        font-size: 20px;
+    }
+
+    .contenedor-copy-1 {
+        margin-top: 7em;
+        margin-bottom: 0em;
+        margin-left: 145px;
+}
+
+
+
+
+
+
+}
+@media screen and (max-width: 1000px){
+   ..contenedor-copy-1 {
+        margin-top: 7em;
+        margin-bottom: 0em;
+}
+    }
+    .card-edited {
+        width: 250px;
+    }
+    .card-mt {
+        margin-top: 1em;
+    }
+    .contenedor-main-1 {
+        margin-top: 0;
+     
+    }
+}
+@media screen and (max-width: 780px){
+    .contenedor-copy-1 {
+        margin-top: 2em;
+        margin-bottom: 0em;
+        margin-left: 190px;
+        /* z-index: 10; */
+    }
+    .contenedor-copy-1 > h1 {
+        font-size: 2.5rem;
+        
+    }
+    .contenedor-principal {
+        margin-top: 5em;
+    }
+    .card-mt-2{
+        margin-top: 1em;
+    }
+}
+@media screen and (max-width: 580px){
+
+.contenedor-copy-1 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        margin-left: 250px;
+}
+
+    
+    .contenedor-main-1 {
+        margin-top: -40px;
+     
+    }
+}
+.contenedor-copy-1 > h1 {
+    font-weight: 200;
+}
+.contenedor-copy-2 > div > h2 {
+    color: #000;
+    font-weight: 500;
+    font-size: 2em !important;
+    margin-bottom: 2em;
+}
+
+.contenedor-copy-2 > div > hr {
+   border-top: 1px solid rgba( 0,0,0,.1)
+}
+
+
+
+.card-edited-2 h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (min-width: 576px){
+    .boton-menu {
+        display: none;
+    }
+    .menu-desplegable {
+        display: none !important;
+    }
+    
+ }
