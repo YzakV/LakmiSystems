@@ -1,148 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-        <link rel="stylesheet" href="css/estilos-contacto.css">
-        <link rel="stylesheet" href="css/fontello-contacto.css">
-        <link rel="stylesheet" href="styles/styles.css">
 
-        <title>Lakmi Systems</title>
-    </head>
-    <body>
-        <div id="hablanos-btn" onclick=showHablanos>
-            <span>Háblanos</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Lakmi Systems</title>
+</head>
+
+<body>
+    <div id="hablanos-btn" onclick=showHablanos>
+        <span>Háblanos</span>
+    </div>
+    <div class="container-fluid">
+        <div class="row contenedor-logo-navbar no-gutters justify-content-between align-items-center fixed-top">
+            <div class="col-2 col-lg-1">
+                <a href="index.html"><img class="img-fluid logo-principal" src="./assets/logo.svg" alt=""></a>
+            </div>
+            <nav class="nav navbar-light col-auto d-none d-sm-block">
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Beneficios</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="beneficios_admin.html">Administración de Riesgos</a>
+                            <a class="dropdown-item" href="beneficios_control.html">Control Interno</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="boton-menu icon icon-align-justify" id="boton-menu">
+            </div>
         </div>
-        <div class="container-fluid">
-			<div class="row contenedor-logo-navbar no-gutters justify-content-between align-items-center fixed-top">
-				<div class="col-2 col-lg-1">
-					<a href="index.html"><img class="img-fluid logo-principal" src="./assets/logo.svg" alt=""></a>
-				</div>
-				<nav class="nav navbar-light col-auto d-none d-sm-block">
-					<ul class="navbar-nav d-flex flex-row">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Servicios</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Beneficios</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="beneficios_admin.html">Administración de Riesgos</a>
-								<a class="dropdown-item" href="beneficios_control.html">Control Interno</a>
-							</div>  
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="nosotros.html">Nosotros</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contacto.html">Contacto</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="boton-menu icon icon-align-justify" id="boton-menu">
-				</div>
-			</div>
     </div>
     <div class="menu-desplegable" id="menu-desplegable">
-		<nav class="barra-de-navega-desplegable">
-			<ul class="ul-desplegable">
-				<li>
-					<a>Servicios</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Beneficios</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="beneficios_admin.html">Administración de Riesgos</a>
-						<a class="dropdown-item" href="beneficios_control.html">Control Interno</a>
-					</div>  
-				</li>
-				<li>
-					<a href="nosotros.html">Nosotros</a>
-				</li>
-				<li>
-					<a href="contacto.html">Contacto</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-            <!-- MAIN -->
-            <main class="row justify-content-center contenedor-main-1">
-                <div class="col-4 contenedor-copy-2">
-                    <div class="card card-edited-2">
-                        <h2 class="text-center">División de Asesoría y Consultoria</h2>
-
-                        <a class="text-center" href="">+52(55)75876533</a><span class="icon-right-big" style="color:white;"></span>
-
-                        <a class="text-center" href="">consultingservices@lakmisystems.com.mx</a><span class="icon-right-big" style="color:white;"></span>
-
-
-                        <hr> 
-
-                         <h2 class="text-center">
-                            División de Software</h2>
-
-                        <a class="text-center" href="">consultingservices@lakmisystems.com.mx</a><span class="icon-right-big" style="color:white;"></span>
-
-                        <a class="text-center" href="">softwaresolutions@lakmisystems.com.mx</a><span class="icon-right-big" style="color:white;"></span>
-
-                        <hr>
-
-                       <h1> Nos ubicamos en:
-                        <br>
-                        <br>
-                        Avenida Bengamín Franklin 186, Colonia Escandón II Sección, Delegación Miguel Hidalgo, C.P. 11800 Ciudad de México, México.</h1>
+        <nav class="barra-de-navega-desplegable">
+            <ul class="ul-desplegable">
+                <li>
+                    <a>Servicios</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Beneficios</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="beneficios_admin.html">Administración de Riesgos</a>
+                        <a class="dropdown-item" href="beneficios_control.html">Control Interno</a>
                     </div>
-                </div>
-                
-                <div class="col-lg-8 d-flex-12 col-md-12 text-center link-servicios">
-                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1894909187818!2d-99.17650958608154!3d19.4042169869004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff69722628b5%3A0x74b7f79e6afe0f67!2sAv.+Benjam%C3%ADn+Franklin+186%2C+Escand%C3%B3n+II+Secc%2C+11800+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1557692244380!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header mt-5">
+        <div class="container">
+            <div class="row py-5">
+                <div id="hablanos" class="col-12 col-md-6">
+                    <div class="container body">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="titulo-contacto">
+                                    Division de asesoria y consultoria
+                                </h3>
+                                <div class="enlaces">
+                                    <a>
+                                        +52 (55) 7587 6533
+                                    </a>
+                                    <a>
+                                        consultingservices@lakmisystems.com.mx
+                                    </a>
+                                </div>
 
-                </div>
-                <div class="col-12 contenedor-copy-3">
-                    <h2 class="text-center">Únete a Lakmi Systems</h2>
-                </div>
-                <div class="col-12 col-md-12 d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mi-h1-bonito">¿Buscas ser parte de un equipo dinámico, incluyente y siempre a la vanguardia? En Lakmi Systems hay un lugar para ti
-                        <br>
-                        escríbenos a: 
-                        reclutamiento@lakmisystems.com.mx</h1>
-                        <br>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </main>
+                            </div>
+                            <hr>
+                            <div class="col-12">
+                                <h3 class="titulo-contacto">
+                                    División de software
+                                </h3>
+                                <div class="enlaces">
+                                    <a>
+                                        +52 (55) 7587 6533
+                                    </a>
+                                    <a>
+                                        softwaresolutions@lakmisystems.com.mx
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-12">
+                                <h3 class="titulo-contacto">
+                                    Division de asesoria y consultoria
+                                </h3>
+                                <p>
+                                    Avenida Benjamín Franklin 186, Colonia Escandón II Sección, Delegación Miguel
+                                    Hidalgo, C.P.
+                                    11800 Ciudad de México, México.
+                                </p>
+                                <div class="enlaces">
+                                    <a>
+                                        Abrir en maps
+                                    </a>
+                                </div>
+                            </div>
 
-            <!-- FOOTER -->
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row justify-content-start justify-content-sm-center align-items-center contenedor-footer">
-                        <div class="col-auto">
-                            <h4 class="text-white"><small>&copy;2019 Lakmi Systems, S.A.S de C.V.</small></h4>
                         </div>
-                        <div class="col-12 text-white text-start text-sm-center">
-                            <span class="icon icon-facebook mr-4"></span>
-                            <span class="icon icon-twitter mr-4"></span>
+                        <div>
+
+                        </div>
+                        <div>
+
                         </div>
                     </div>
                 </div>
-            </footer>
+                <div class="col-12 col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.1894909187818!2d-99.17650958608154!3d19.4042169869004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff69722628b5%3A0x74b7f79e6afe0f67!2sAv.+Benjam%C3%ADn+Franklin+186%2C+Escand%C3%B3n+II+Secc%2C+11800+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1557692244380!5m2!1ses-419!2smx"
+                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row justify-content-start justify-content-sm-center align-items-center contenedor-footer">
+                <div class="col-auto">
+                    <h4 class="text-white"><small>&copy;2019 Lakmi Systems, S.A.S de C.V.</small></h4>
+                </div>
+                <div class="col-12 text-white text-start text-sm-center">
+                    <span class="icon icon-facebook mr-4"></span>
+                    <span class="icon icon-twitter mr-4"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
 
-    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
 </html>

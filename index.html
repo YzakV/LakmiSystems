@@ -16,12 +16,73 @@
 </head>
 
 <body>
-	<div id="hablanos-btn" onclick=showHablanos>
+	<div id="hablanos-btn" onclick="showHablanos()">
 		<span>Háblanos</span>
 	</div>
-	<div id="hablanos" class="d-none">
-		<a style="width: 3rem;position: absolute;height: 3rem;right: 0;background: no-repeat;border: 0;" onclick="hideHablanos"></a>
-		<img src="./assets/contactanos.png" alt="">
+	<div id="hablanos" class="col-10 col-sm-7 col-md-4 col-lg-3 d-none">
+		<div class="bar">
+			<h3 class="titulo-barra">Hablemos</h3>
+			<a onclick="hideHablanos()">
+					<svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.5001 12.4142L21.046 21.9602L22.4602 20.5459L12.9143 11L22.4603 1.45406L21.0461 0.0398445L11.5001 9.5858L1.95413 0.0398445L0.539917 1.45406L10.0859 11L0.539955 20.5459L1.95417 21.9602L11.5001 12.4142Z" fill="white"/>
+						</svg>				
+			
+			</a>
+		</div>
+		<div class="container body">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="titulo-contacto">
+						Division de asesoria y consultoria
+					</h3>
+					<div class="enlaces">
+						<a>
+							+52 (55) 7587 6533
+						</a>
+						<a>
+							consultingservices@lakmisystems.com.mx
+						</a>
+					</div>
+
+				</div>
+				<hr>
+				<div class="col-12">
+					<h3 class="titulo-contacto">
+						División de software
+					</h3>
+					<div class="enlaces">
+						<a>
+							+52 (55) 7587 6533
+						</a>
+						<a>
+							softwaresolutions@lakmisystems.com.mx
+						</a>
+					</div>
+				</div>
+				<hr>
+				<div class="col-12">
+					<h3 class="titulo-contacto">
+						Division de asesoria y consultoria
+					</h3>
+					<p>
+						Avenida Benjamín Franklin 186, Colonia Escandón II Sección, Delegación Miguel Hidalgo, C.P.
+						11800 Ciudad de México, México.
+					</p>
+					<div class="enlaces">
+							<a>
+								Abrir en maps
+							</a>
+						</div>
+				</div>
+
+			</div>
+			<div>
+
+			</div>
+			<div>
+
+			</div>
+		</div>
 	</div>
 
 	<div class="container-fluid">
@@ -272,12 +333,13 @@
 			slide.innerHTML = titulos[counter]
 			counter++
 		}
-		function showHablanos(){
-			docuemnt.getElementById('hablanos').style.display = "block";
-			console.log('dsafs')
+		function showHablanos() {
+			$('#hablanos').removeClass('d-none');
+			$("#hablanos").addClass('d-block')
 		}
-		function hideHablanos(){
-			docuemnt.getElementById('hablanos').style.display = "none";
+		function hideHablanos() {
+			$('#hablanos').removeClass('d-block');
+			$("#hablanos").addClass('d-none')
 		}
 		$("#boton-menu").click(function(){
 			$("#menu-desplegable").toggle();
