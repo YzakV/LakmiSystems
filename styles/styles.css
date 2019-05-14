@@ -65,3 +65,20 @@
 .icon-align-justify:before {
   content: "\69";
 }
+.content p{
+  font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+color: #383838;
+}
+.content strong{
+  font-family: Source Sans Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 100%;
+text-align: center;
+color: #383838;
+}
