@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/home.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+	<div id="hablanos-btn" onclick=showHablanos>
+		<span>Hablanos</span>
+	</div>
+	<div id="hablanos" class="d-none">
+		<a style="width: 3rem;position: absolute;height: 3rem;right: 0;background: no-repeat;border: 0;" onclick="hideHablanos"></a>
+		<img src="./assets/contactanos.png" alt="">
+	</div>
+
+	<div class="container-fluid">
+			<div class="row contenedor-logo-navbar no-gutters justify-content-between align-items-center fixed-top">
+				<div class="col-2 col-lg-1">
+					<a href="index.html"><img class="img-fluid logo-principal" src="./assets/logo.svg" alt=""></a>
+				</div>
+				<nav class="nav navbar-light col-auto d-none d-sm-block">
+					<ul class="navbar-nav d-flex flex-row">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Servicios</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Beneficios</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="beneficios_admin.html">Administración de Riesgos</a>
+								<a class="dropdown-item" href="beneficios_control.html">Control Interno</a>
+							</div>  
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="nosotros.html">Nosotros</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="">Contacto</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="boton-menu icon icon-align-justify" id="boton-menu">
+				</div>
+			</div>
+	</div>
+
+	<div class="menu-desplegable" id="menu-desplegable">
+		<nav class="barra-de-navega-desplegable">
+			<ul class="ul-desplegable">
+				<li>
+					<a>Servicios</a>
+				</li>
+				<li>
+					<a>Beneficios</a>
+				</li>
+				<li>
+					<a>Nosotros</a>
+				</li>
+				<li>
+					<a>Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+
+
+	<!-- <nav class="barra-de-navegacion">
+		<a>
+			<img src="./assets/logo.svg" alt="" height="32px">
+		</a>
+		<div class="menu">
+			<a>Servicios</a>
+			<a>Beneficios</a>
+			<a>Nosotros</a>
+			<a>Contacto</a>
+		</div>
+		<div class="boton-menu icon icon-align-justify" id="boton-menu">
+		</div>
+	</nav> -->
+
+	<div class="container-fluid">
+		<div class="row header">
+			<div class="col-12 offset-sm-1 col-sm-10 col-md-8 d-flex align-items-center">
+				<h1 id="text-slide">Soluciones y servicios con un enfoque basado en la admnistración de riesgos</h1>
+			</div>
+		</div>
+		<div class="row servicios">
+			<div class="offset-sm-1 col-sm-10 offset-0 col-12 ">
+				<h2 class="titulo">Te asesoramos en las siguietnes areas</h2>
+			</div>
+			<div class="container">
+				<div class="row cartas d-flex">
+					<div class="col-12 col-md-6 col-lg-2">
+						<div class="carta">
+							<div class="imagen">
+								<img class="my-3" src="./assets/contable.svg">
+							</div>
+							<div class="descripcion">
+								<span>Contable</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-2">
+						<div class="carta">
+							<div class="imagen">
+								<img class="my-3" src="./assets/sistemas.svg">
+							</div>
+							<div class="descripcion">
+								<span>Sistemas y tecnologias de la información</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-2">
+						<div class="carta">
+							<div class="imagen">
+								<img class="my-3" src="./assets/administracion.svg">
+							</div>
+							<div class="descripcion">
+								<span>Administración y finanzas</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-2">
+						<div class="carta">
+							<div class="imagen">
+								<img class="my-3" src="./assets/recursos.svg">
+							</div>
+							<div class="descripcion">
+								<span>Recursos humanos</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-2">
+						<div class="carta">
+							<div class="imagen">
+								<img class="my-3" src="./assets/tesoreria.svg">
+							</div>
+							<div class="descripcion">
+								<span>Tesoreria</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-2">
+						<div class="carta">
+							<div class="imagen">
+								<img class="my-3" src="./assets/legal.svg">
+							</div>
+							<div class="descripcion">
+								<span>Legal</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12">
+				<a href="" class="enlace text-center text-white d-block margen-vertical">Consulta la lista completa de
+					servicios -></a>
+			</div>
+		</div>
+		<div class="row obtienes">
+			<div class="container">
+				<div class="row">
+					<div class="offset-1 col-10 cuadro-negro-titulo">
+						<h2 class="titulo">
+							Lo que obtienes
+						</h2>
+					</div>
+
+					<div class="container-fluid cuadro-azul">
+						<div class="row justify-content-around cartas">
+							<div class="col-10 col-sm-4 col-lg-3">
+								<div class="carta">
+									<div class="imagen">
+										<img class="my-3" src="./assets/riesgos.svg">
+									</div>
+									<div class="descripcion">
+										<span>Beneficios de la administración de riesgos</span>
+									</div>
+									<div class="enlace">
+										<a>Saber mas -></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-10 col-sm-4 col-lg-3">
+								<div class="carta">
+									<div class="imagen">
+										<img class="my-3" src="./assets/control.svg">
+									</div>
+									<div class="descripcion">
+										<span>Beneficios de control interno efectivo</span>
+									</div>
+									<div class="enlace">
+										<a>Saber mas -></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-10 col-sm-4 col-lg-3">
+								<div class="carta">
+									<div class="imagen">
+										<img class="my-3" src="./assets/servicios.svg">
+									</div>
+									<div class="descripcion">
+										<span>Conoce lo que incluye nuestro servicio</span>
+									</div>
+									<div class="enlace">
+										<a>Saber mas -></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="offset-1 col-10 cuadro-negro-abajo">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row justify-content-start justify-content-sm-center align-items-center contenedor-footer">
+				<div class="col-auto">
+					<h4 class="text-white"><small>&copy;2019 Lakmi Systems, S.A.S de C.V.</small></h4>
+				</div>
+				<div class="col-12 text-white text-start text-sm-center">
+					<span class="icon icon-facebook mr-4"></span>
+					<span class="icon icon-twitter mr-4"></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<script>
+		var titulos = ["Soluciones y servicios con un enfoque basado en la admnistración de riesgos", "Nuestro propósito: crear, proteger y mejorar el valor que ofrecen nuestros clientes.", "Te ayudamos a establecer una estrategia y objetivos con un balance óptimo entre tus metas de crecimiento, inversión y manejo de riesgos."]
+		var counter = 1
+
+		var slide = document.getElementById('text-slide')
+
+		setInterval(changeSlide, 5000);
+
+		function changeSlide() {
+			counter = counter == 3 ? 0 : counter;
+			slide.innerHTML = titulos[counter]
+			counter++
+		}
+		function showHablanos(){
+			docuemnt.getElementById('hablanos').style.display = "block";
+			console.log('dsafs')
+		}
+		function hideHablanos(){
+			docuemnt.getElementById('hablanos').style.display = "none";
+		}
+		$("#boton-menu").click(function(){
+			$("#menu-desplegable").toggle();
+		});
+	</script>
+</body>
+
+</html>
